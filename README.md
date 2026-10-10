@@ -35,6 +35,15 @@ Claude runs `scripts/check_env.py` first and tells you what is missing.
 
 Hard cuts only, original audio, no text/music/LUTs/stabilisation, black frame after the hook, fade-out at the end, shortest edit that tells the whole story. See `skills/unboxing-editor/SKILL.md` to adapt it.
 
+## Privacy and data handling
+
+- **Everything runs locally.** The bundled scripts (`skills/unboxing-editor/scripts/`) use `ffmpeg`, `ffprobe` and Python on your machine. They make no network requests and contain no telemetry.
+- **No personal data is collected, stored or transmitted by this plugin.** It reads only the video clips in the folder you point it at and writes scratch files to `~/unbox_work/<Product>` plus the final MP4/FCPXML next to your clips. You can delete these at any time.
+- **No credentials.** The plugin asks for no accounts, API keys or tokens and never reads environment credentials.
+- **No MCP servers or connectors.** The plugin declares none. Instead, the skill instructs Claude to run the bundled Python scripts and `ffmpeg` in your shell (these are the only programs it runs; read them in `scripts/`).
+- **What Claude sees:** small JPG contact sheets generated from your clips, handled under your normal Claude data terms. Raw video files are never uploaded by the plugin.
+- Not intended for users under 18.
+
 ## Notes
 
 - Raw footage is never modified; scratch goes to `~/unbox_work/<Product>`.
