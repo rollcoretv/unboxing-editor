@@ -1,0 +1,8 @@
+{
+  "name": "unboxing-editor",
+  "version": "1.0.0",
+  "description": "Cut-only 9:16 unboxing/product rough-cut editor: picks the shortest edit that tells the product story, renders HLG-safe MP4 and exports an FCPXML for Final Cut Pro.",
+  "author": { "name": "rollcoretv" },
+  "license": "MIT",
+  "keywords": ["video", "unboxing", "reels", "final-cut-pro", "ffmpeg", "fcpxml", "editing"]
+}

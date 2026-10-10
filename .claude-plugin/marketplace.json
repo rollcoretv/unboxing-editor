@@ -1,0 +1,11 @@
+{
+  "name": "unboxing-editor-marketplace",
+  "owner": { "name": "rollcoretv" },
+  "plugins": [
+    {
+      "name": "unboxing-editor",
+      "source": "./",
+      "description": "Cut-only 9:16 unboxing rough-cut editor with FCPXML export for Final Cut Pro."
+    }
+  ]
+}
